@@ -1,5 +1,10 @@
 Revision history for Devel-REPL-Plugin-DDP
 
+0.04  2014-07-25 14:13:25 PDT
+        - Pass all return values through DDP instead of potentially
+          stringifying single objects or using single, non-ref values as-is.
+          Consistency consistency consistency.
+
 0.03  2013-12-10 16:45:27 PST
         - Stop leaking internal representation of return values to the user
           (persistent enclosing outer arrayref)
